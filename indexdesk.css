@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap');
+*{margin:0;}
+#sec1{
+	width:40%;
+	height:100%;
+	float:right;
+}
+#sec1-img-mob{display:none;}
+#sec1-img-desk{
+	width:100%;
+	height:100%;
+}
+#sec2{
+	width:60%;
+	height:20%;
+	background:rgb(255,240,245);
+	float:left;
+}
+#sec2-div{
+	width:60%;
+	padding-top:40px;
+	margin:0px auto;
+}
+#sec3{width:60%;height:80%;
+	background:rgb(255,240,245);
+	clear:left;
+;}
+#sec3-div1{
+	width:60%;
+	margin:0px auto;
+}
+#sec3-div1>h1{
+	font-size:60px;
+	letter-spacing:10px;
+}
+#sec3-div1>p{
+	font-size:20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:400;
+	margin:25px 0px;
+	color: hsl(0, 36%, 70%);
+	opacity:0.7;
+}
+.black{font-family: 'Josefin Sans', sans-serif;font-weight:600;}
+.white{
+	color: hsl(0, 36%, 70%);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:100;
+}
+#sec3-div1-div{
+	margin:15% 0px 0px 0px;
+}
+#sec3-div1-div>input{
+	width:80%;
+	height:10%;
+	background:transparent;
+	border-radius:50px;
+	border:none;
+	border:0.3px solid black;
+	font-size:20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#sec3-div1-div>Button{
+	width:20%;
+	height:10.3%;
+	border-radius:50px;
+	position:relative;
+	right:13%;
+	border:none;
+	color:white;
+	background:linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+#sec3-div1-div>p{
+	color:red;
+	margin:0px 0px 0px 10px;
+}
+#email::placeholder{
+	padding-left:10%;
+	opacity:0.5;
+}
+@media (max-width: 991px){
+	#sec1-img-desk{display:none;}
+	#sec1-img-mob{
+	display:block;
+	width:100%;
+	height:100%;}
+	#sec2{
+		width:100%;
+		float:none;
+		height:15%;
+	}
+	#sec1{
+		float:none;
+		width:100%;
+		height:50%;
+	}
+	#sec3{
+		padding-top:10%;
+		clear:left;
+		width:100%
+	}
+	#sec3-div1-div>p{display:none;}
+}
