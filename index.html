@@ -7,8 +7,15 @@
 	</head>
 	<script>
 		function myboy(){
-			console.log(confirm("Thank you For Subscribe."));
-		}
+			error.textContent ="";
+			var val=(document.getElementById("email").value);
+			var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+			if (val.match(validRegex))
+			{
+				console.log(confirm("Thank you For Subscribe."));
+			}
+			else{error.textContent ="Please Provide a Valid Email";}
+			}
 	</script>
 	<body>
 		<section id="sec2">
@@ -28,8 +35,8 @@
 				<p>Hello fellow shoppers! We're currently building our new fashion store. 
 				Add your email below to stay up-to-date with announcements and our launch deals.</p>
 				<div id="sec3-div1-div">
-					<input id="email" type="email" name="email" placeholder="Email  Address"><button onclick="myboy()">></button>
-					<p>Please Provide a Valid Email</p>
+					<input id="email" type="email" autofocus name="email" placeholder="Email  Address"><button onclick="myboy()">></button>
+					<h1  style="color:red;" id="error"></h1>
 				</div>
 			</div>
 		</section>
